@@ -1,0 +1,63 @@
+body, button, input {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.list-item {
+  display: grid;
+  grid-template-columns: /* 3rem */ 5rem 10rem 5rem 5rem;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.5rem;
+  border: 1px solid #ff0000;
+}
+.list-item p, button {
+  display: inline;
+}
+
+.list-item button {
+  border: none;
+  background-color: #14ecec;
+  border-radius: 0.5rem;
+  height: 2rem;
+  margin: 0.4rem;
+  transition: all 200ms;
+}
+.list-item button:hover {
+  transform: translateY(-3px);
+}
+
+.mono {
+  font-family: monospace;
+  font-size: 0.5rem;
+}
+
+
+.modal-wrapper {
+  width: 99vw;
+  height: 99vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #00000077;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  width: 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: #14ecec;
+  padding: 2rem;
+}
+.modal p, input, button {
+  width: 100%;
+}
+button#modal-close {
+  width: 4rem;
+  float: right;
+}
